@@ -1,0 +1,29 @@
+.info{
+    margin-top: 64px;
+    background-color: black;
+    border-color: black;
+    margin-left: 86px;
+    width: 980px;
+    height: 233px;
+    margin-bottom: 47px;
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 200px;
+    font-size: 18px;
+}
+.button{
+    margin-left: 793px;
+    width: 277px;
+    height: 76px;
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-size: 24px;
+    border-radius: 15px;
+    margin-bottom: 46px;
+}
+.bord{
+    width: 1160px;
+    height: 58px;
+    background-color: #312828;
+}

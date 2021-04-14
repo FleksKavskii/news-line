@@ -1,0 +1,39 @@
+.bord{
+    width: 1160px;
+    height: 58px;
+    background-color: #312828;
+    margin-bottom: 10px;
+}
+.messages{
+    color: white;
+    font-size: 24px;
+    margin-left: 86px;
+    margin-top: 48px;
+}
+.message{
+    margin-top: 25px;
+    width: 960px;
+    margin-left: 10px;
+    margin-bottom: 28px;
+}
+.button-News{
+    text-align: center;
+    margin-left: 425px;
+    width: 277px;
+    height: 76px;
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-size: 24px;
+    border-radius: 15px;
+}
+.delete-button{
+    width: 150px;
+    margin-bottom: 28px;
+    background-color: black;
+    border-color: black;
+    color: white;
+    font-size: 24px;
+    border-radius: 15px;
+    margin-left: 760px;
+}

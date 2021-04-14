@@ -1,0 +1,12 @@
+.all{
+    background-color: #312828;
+    font-family: 'Montserrat';
+    min-height: 1080px;
+
+}
+.app{
+    margin: 0 auto;
+    width: 1160px;
+    background-color: #403636;
+    min-height: 1080px;
+}
