@@ -1,18 +1,18 @@
 import './App.css';
-import Header from './Header'
-import NewsContainer from "./NewsContainer";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AddInfoContainer from "./AddInfoContainer";
+import {BrowserRouter, Route} from "react-router-dom";
+import registrationContainer from "./registrationContainer";
+import React from "react";
+import newsLineContainer from "./newsLineContainer";
 
 function App(props) {
     return (
-        <div className='all'>
-            <div className='app'>
-                <Header/>
-                <AddInfoContainer dispatch={props.dispatch} store={props.store}/>
-                <NewsContainer dispatch={props.dispatch} store={props.store}/>
+        <BrowserRouter>
+            <div className='all'>
+                <Route exact path='/' component={registrationContainer}/>
+                <Route path='/line' component={newsLineContainer}/>
             </div>
-        </div>)
+        </BrowserRouter>)
 }
 
 export default App;

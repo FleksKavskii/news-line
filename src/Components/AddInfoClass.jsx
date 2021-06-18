@@ -10,26 +10,24 @@ class AddInfoClass extends Component {
     addPost = () => {
         let text = this.newPostElement.current.value
         this.newPostElement.current.value = ''
-        axios.post("http://localhost:3001/post", {
-            message: text
-        })
-        axios.get("http://localhost:3001/messages").then(responce => {
-            this.props.newMessage(responce.data)
-        })
+        let username = this.props.userData[0].userName
+        this.props.addMessageThink(text, username)
     }
 
     render() {
         return (
             <div>
                 <div>
-                    <div>
-                        <input ref={this.newPostElement} className='info' type='text'></input>
+                    <div className='add-post-container'>
+                        <div className='add-post-info'>
+                            <input ref={this.newPostElement} className='info' type='text'/>
+                        </div>
+                        <button onClick={this.addPost} className='button'>Отправить</button>
                     </div>
-                    <button onClick={this.addPost} className='button'>Отправить</button>
-                    <div className='bord'></div>
+                    <div className='bord'/>
                 </div>
             </div>
-        );
+        )
     }
 }
 

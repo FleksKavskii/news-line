@@ -10,6 +10,7 @@ export let renderFunc = (state) => {
     ReactDOM.render(
         <React.StrictMode>
             <Provider store={store}>
+                <meta name='viewport' content='width=device-width'/>
                 <App state={state} dispatch={store.dispatch.bind(store)} store={store}/>
             </Provider>
         </React.StrictMode>,
@@ -18,10 +19,6 @@ export let renderFunc = (state) => {
 }
 
 renderFunc(store.getState())
-store.subscribe(() => {
-    let state = store.getState()
-    renderFunc(state)
-})
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
